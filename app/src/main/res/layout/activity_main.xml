@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lab A7 – Xin quyền truy cập"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nguyễn Doãn Hoàng Khánh – MSSV 241A310088" />
+
+    <!-- Khung xem trước ảnh vừa chụp -->
+    <ImageView
+        android:id="@+id/imgAnh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="#EEEEEE"
+        android:scaleType="centerInside"
+        android:src="@android:drawable/ic_menu_camera" />
+
+    <TextView
+        android:id="@+id/tvTrangThai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:lineSpacingExtra="4dp"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnChupAnh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Chụp ảnh (cần quyền CAMERA)" />
+
+    <Button
+        android:id="@+id/btnThongBao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Gửi thông báo (cần POST_NOTIFICATIONS)" />
+
+    <Button
+        android:id="@+id/btnCaiDat"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Mở Cài đặt ứng dụng" />
+
+    <!-- Nút Bài nâng cao 1 -->
+    <Button
+        android:id="@+id/btnXinNhieuQuyen"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Xin nhiều quyền cùng lúc (NC1)" />
+
+    <!-- Nút Bài nâng cao 2 -->
+    <Button
+        android:id="@+id/btnDocDanhBa"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Đọc 5 liên hệ đầu tiên (NC2)" />
+
+</LinearLayout>
